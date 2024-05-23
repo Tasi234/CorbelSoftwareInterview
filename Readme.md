@@ -22,12 +22,6 @@ The UI is proxied through the backend, so both will need to be running.
 
 UI Should be accessed from http://localhost:3000/
 
-## Hints
+## Hints (BASE64 Encoded)
 
-
-Unable to resolve service for type 'XXXX' while attempting to activate 'XXXX'.
-Hint: Review the class that is being activated and check dependency injection at startup
-
-ArgumentException: The value cannot be an empty string. (Parameter 'path')
-Which service is this error being thrown in? Is it looking for a certain file?
-
+VW5hYmxlIHRvIHJlc29sdmUgc2VydmljZSBmb3IgdHlwZSAnWFhYWCcgd2hpbGUgYXR0ZW1wdGluZyB0byBhY3RpdmF0ZSAnWFhYWCcuCkhpbnQ6IFJldmlldyB0aGUgY2xhc3MgdGhhdCBpcyBiZWluZyBhY3RpdmF0ZWQgYW5kIGNoZWNrIGRlcGVuZGVuY3kgaW5qZWN0aW9uIGF0IHN0YXJ0dXAKCkFyZ3VtZW50RXhjZXB0aW9uOiBUaGUgdmFsdWUgY2Fubm90IGJlIGFuIGVtcHR5IHN0cmluZy4gKFBhcmFtZXRlciAncGF0aCcpCldoaWNoIHNlcnZpY2UgaXMgdGhpcyBlcnJvciBiZWluZyB0aHJvd24gaW4/IElzIGl0IGxvb2tpbmcgZm9yIGEgY2VydGFpbiBmaWxlPwoKR2l0IGlzIHlvdXIgZnJpZW5kLg==

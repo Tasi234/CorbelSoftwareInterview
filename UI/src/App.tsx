@@ -1,4 +1,3 @@
-import { InfoProvider } from "./Contexts/InfoProvider";
 import UserResults from "./UserResults";
 import "./App.css";
 
@@ -7,9 +6,7 @@ function App() {
     <div className="mainBody">
       <div className="mainColumn">
         <Welcome />
-        {/* <InfoProvider> */}
         <UserResults />
-        {/* </InfoProvider> */}
       </div>
     </div>
   );
