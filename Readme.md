@@ -4,6 +4,8 @@ Welcome to your take-home exam for the Software Engineering position. This proje
 
 Your task is to identify and fix bugs to make the application run correctly.
 
+Feel free to use ChatGPT/GPT4 or any other AI tools at your disposal. 
+
 Ideally it should take less than 30 minutes getting the project running and solving all the tasks.
 
 The goal is to test you have a basic understanding of Git, C#, Node, Typescript, ReactJS (hooks and context), Dependency Injection.
