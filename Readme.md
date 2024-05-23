@@ -4,14 +4,22 @@ Welcome to your take-home exam for the Software Engineering position. This proje
 
 Your task is to identify and fix bugs to make the application run correctly.
 
+Ideally it should take less than 30 minutes getting the project running and solving all the tasks.
+
 The goal is to test you have a basic understanding of Git, C#, Node, Typescript, ReactJS (hooks and context), Dependency Injection.
 
 ## Getting Started
 
+We're expecting you to see build errors etc. Solving them is apart of the challenge.
+
+If there is one you cannot solve please mention it in the email and we can go over it.
+
 It is assumed you'll have the following installed:
 
 - Node.js and npm (https://nodejs.org/) (Or Bun)
-- .NET Core SDK (https://dotnet.microsoft.com/download)
+  Ideally v16+
+
+- .NET Core 8 SDK (https://dotnet.microsoft.com/download)
 
 You will need to get the front-end setup and running first (UI folder), then start the backend.
 
