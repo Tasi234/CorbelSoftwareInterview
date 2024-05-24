@@ -1,5 +1,8 @@
 using Microsoft.AspNetCore.Http.Json;
 
+//cors
+var  MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
+
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -15,8 +18,19 @@ builder.Services.AddScoped<ISecretKeyService, SecretKeyService>();
 builder.Services.AddScoped<IBasicInfoService, BasicInfoService>();
 builder.Services.AddScoped<ICertLocationProvider, CertLocationProvider>();
 
+//cors
+builder.Services.AddCors(options =>{ 
+    options.AddPolicy(name: MyAllowSpecificOrigins,
+                      builder =>
+                      {
+                          builder.WithOrigins("*");
+                      });
+});
 
 var app = builder.Build();
+
+//cors
+app.UseCors(MyAllowSpecificOrigins);
 
 //map default endpoint
 app.MapGet("/Home", () =>

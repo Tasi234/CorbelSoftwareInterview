@@ -1,14 +1,18 @@
 import UserResults from "./UserResults";
 import "./App.css";
+import { InfoProvider } from "./Contexts/InfoProvider";
 
 function App() {
   return (
+    //dependancy injection in react, wrapping of the application in the provider 
+    <InfoProvider>
     <div className="mainBody">
       <div className="mainColumn">
         <Welcome />
         <UserResults />
       </div>
     </div>
+    </InfoProvider>
   );
 }
 

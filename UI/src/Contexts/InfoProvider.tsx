@@ -17,14 +17,15 @@ export const InfoContext = createContext<InfoContextValue>({
     CertificateHash: "DEFAULT",
     SystemOS: "DEFAULT",
   },
-  Env: "INVALID",
+  Env: "INACTIVE",
 });
 
 export const InfoProvider = ({ children }: React.PropsWithChildren) => {
   const [info, setInfo] = useState<InfoResult>();
   //quick and dirty fetch
   useEffect(() => {
-    fetch("/Decoy")
+    //updated to correct path
+    fetch("http://localhost:3001/Info")      
       .then((response) => response.json())
       .then((data) => setInfo(data))
       .catch((error) => console.log(error));
